@@ -1,0 +1,178 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Mochiy+Pop+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body{
+    background: rgb(248,224,116);
+background: linear-gradient(51deg, rgba(248,224,116,0) 10%, rgba(248,224,116,1) 80%);
+}
+
+header{
+    background: rgb(248, 224, 116);
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header:hover{
+    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.144);
+    transition: 0.3s;
+}
+
+h1{
+    font-family: 'Indie Flower', cursive;
+}
+
+.logo{
+    margin-left: 36px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.logo:hover{
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.logo ::after{
+    content: " 🐾";
+}
+
+nav{
+    flex-grow: 10;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li{
+    margin: 0 36px 0 20px;
+    font-size: 22px;
+    font-family: 'Dongle', sans-serif;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+
+a:hover{
+    color: rgb(133, 131, 131);
+    transition: 0.4s;
+}
+
+.pets-principal{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-end;
+    padding: 54px 0;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.texto{
+    margin: 55px 0 0 32px;
+    font-size: 24px;
+    font-family: 'Dongle', sans-serif;
+    width: 640px;
+    float: left;
+}
+
+img{
+    margin: 10px 10px;
+}
+
+img:hover{
+    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.363);
+    transition: 0.3s;
+}
+
+
+.coluna1{
+    display: flex;
+    flex-direction: column;
+    width: 285px;
+}
+
+.coluna2{
+    display: flex;
+    flex-direction: column;
+    width: 285px;
+}
+
+.coluna3{
+    display: flex;
+    flex-direction: column;
+    width: 285px;
+}
+
+.coluna4{
+    display: flex;
+    flex-direction: column;
+    width: 285px;
+}
+
+footer{
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 0;
+    background: rgb(248, 224, 116);
+}
+
+@media (min-width: 320px) and (max-width: 750px){
+
+    .texto{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 10%;
+    }
+
+    .pets-principal, img{
+        display: flex;
+        flex-direction: initial;
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header, .logo{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+    }
+
+    h1, h2, li{
+        text-align: center;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    header{
+        padding-bottom: 30%;
+    }
+
+    li{
+        margin: 0 10px;
+        padding-top: 10px;
+    }
+}
